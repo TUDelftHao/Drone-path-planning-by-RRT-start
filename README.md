@@ -11,7 +11,9 @@ RRT*, namely the Rapidly-Exploring Random Trees algorithm, is a method which can
 # Implement details
 ## Environment build up
 In this implemtation, several cylinders will be generated to simulate the obstacles. See the image below, where the green dot denotes the start point, the red dot denotes the end point. 
-![Simulated environment](image/map.png?raw=true "Simulated environment")
+<!-- ![Simulated environment](image/map.png?raw=true "Simulated environment")
+ -->
+<img src="image/map.png" width='100'>
 
 ## Run RRT* 
 The search tree will grow to search the optimal path in generated environment. The density of search space is mannually set. The higher, the slower it searches, but the result would be more optimal. The following image shows the search result, where blue curve is the original curve tree, the yellow curve is the rewired braches and the red curve the final path. The blue start dots are random uniform points for slicing the space.
