@@ -11,19 +11,19 @@ RRT*, namely the Rapidly-Exploring Random Trees algorithm, is a method which can
 # Implement details
 ## Environment build up
 In this implemtation, several cylinders will be generated to simulate the obstacles. See the image below, where the green dot denotes the start point, the red dot denotes the end point. 
-<img src="image/map.png" width='200'>
+<img src="image/map.png" width='300'>
 
 ## Run RRT* 
 The search tree will grow to search the optimal path in generated environment. The density of search space is mannually set. The higher, the slower it searches, but the result would be more optimal. The following image shows the search result, where blue curve is the original curve tree, the yellow curve is the rewired braches and the red curve the final path. The blue start dots are random uniform points for slicing the space.
-<img src="image/trajectory.png" width='200'>
+<img src="image/trajectory.png" width='300'>
 
 ## Simulate drone flying
 After finding the optimal path, the drone will fly along this path from start point to end point, as shown in the following snap.
-<img src="image/simulation.png" width='200'>
+<img src="image/simulation.png" width='300'>
 
 ## Backstep controller simulation(not successful)
 A controller is designed to track the flying path, but this part is not fully successful. 
-<img src="image/tracking.png" width='200'>
+<img src="image/tracking.png" width='300'>
 
 # Execution
 run src/RRT3_test.m file
